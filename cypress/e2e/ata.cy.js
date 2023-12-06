@@ -14,6 +14,7 @@ describe('Suite de test', ()=>{
         cy.get('.inputs').eq(1).type('cypress')
         })
 
+
         it.only('Scenario 3: se connecter',()=>{
             cy.visit('/') 
             cy.get('[data-test="logo-img"]').should('be.visible')
@@ -21,4 +22,11 @@ describe('Suite de test', ()=>{
             cy.get('.input-container').find('#username').type('login_user')
             cy.get('.inputs').eq(1).type('cypress')
             })
+
+
+            it('Scenario 4: se connecter',()=>{
+              cy.visit('/') 
+              cy.get('.inputs').eq(0).clear().type('login_user')
+              cy.get('.inputs').eq(1).type('cypress')
+              })
     })
