@@ -1,0 +1,8 @@
+[{
+    "username":"login_user",
+    "password": "cypress-geek"
+},
+{
+    "username":"geek_user",
+    "password": "cypress-geek"
+}]
